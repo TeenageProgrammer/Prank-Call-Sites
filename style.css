@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color: white;
+    background-color: rgb(24, 24, 24);
+
+}
+
+
+.container {
+    min-height: 100vh;
+    background-color: rgb(24, 24, 24);
+}
+
+.heading {
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.phoneContaienr {
+    border: 5px solid white;
+    border-top: 40px solid white;
+    border-bottom: 10px solid white;
+    max-width: 400px;
+    
+    margin: auto;
+
+    border-radius: 12px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+
+.phoneContaienr::after{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    width: 80px;
+    height: 7px;
+    border-radius: 12px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    /* background: #fff; */
+    border-bottom: 1px solid #a0a0a0;
+    padding-left: 0.5rem;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.input-box .prefix {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.input-box input {
+    flex-grow: 1;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0.5rem;
+    color: white;
+    width: 100%;
+}
+
+.input-box:focus-within {
+    border-color: #777;
+}
+
+
+.numberContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 12px;
+    column-gap: 12px;
+}
+
+.numberContainer div {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 12px 20px;
+    font-size: 32px;
+    border-radius: 4px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.numberContainer div:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.hide{
+    visibility: hidden;
+}
+
+.phoneContaienr #CallBtn{
+    outline: none;
+    border: none;
+    background-color: rgb(21, 148, 21);
+    color: white;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.phoneContaienr #CallBtn:hover{
+    background-color: rgb(23, 183, 23);
+}
+
+.phoneContaienr .CallBtn{
+    outline: none;
+    border: none;
+    background-color: rgb(205, 20, 20);
+    color: white;
+    margin-top: -10px;
+    cursor: pointer;
+    z-index: 56445;
+    font-size: 22px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+#calling{
+    display: none;
+}
+
+#enterNumberDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.phoneContaienr #CallBtn.called{
+    background-color: rgb(205, 20, 20);
+}
+
+.error{
+    color: red;
+}
+
+.changeContainer{
+    height: 100px;
+}
+
+
+@media(max-width: 600px) {
+    body .numberContainer div:hover{
+        background-color: transparent;
+        color: white;
+    }
+}
+
+#calledDiv{
+    display: none;
+    flex-direction: column;
+}
+
+.videoDiv{
+    display: none;
+    flex-direction: column;
+}
+#phoneDiv{
+    padding: 30px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}   
+
+
+.callButnDone{
+    position: absolute;
+    bottom: 0;
+    z-index: 452;
+}
+
+#hVid2{
+    display: none;
+}
+
+.shareWhatsapp{
+    text-align: center;
+    background-color: #25D366;
+    max-width: 400px;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    padding: 4px 0;
+}
+
+.shareWhatsapp a{
+    margin: 0;
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
